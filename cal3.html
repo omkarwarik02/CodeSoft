@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator </title>
+
+    <style>
+        h1{
+            text-align: center;
+            padding: 42px;
+            background-color: #FFDD95;
+            color: white;
+        }
+        .formstyle{
+            width: 250px;
+            height: 430px;
+            margin: auto;
+            border: 3px solid #AAD9BB;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        input{
+
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+    </style>
+</head>
+<body>
+    <h1> Calculator </h1>
+    <div class="formstyle">
+        <form name ="form1">
+            <input id = "calc" type ="text" name = "answer"> <br><br>
+            <input type="button" value="1" onclick="form1.answer.value +='1'">
+            <input type="button" value="2" onclick="form1.answer.value +='2'">
+            <input type="button" value="3" onclick="form1.answer.value +='3'">
+            <input type="button" value="+" onclick="form1.answer.value +='+'">
+            <br><br>
+
+
+            <input type="button" value="4" onclick="form1.answer.value +='4'">
+            <input type="button" value="5" onclick="form1.answer.value +='5'">
+            <input type="button" value="6" onclick="form1.answer.value +='6'">
+            <input type="button" value="-" onclick="form1.answer.value +='-'">
+            <br><br>
+
+
+            <input type="button" value="7" onclick="form1.answer.value +='7'">
+            <input type="button" value="8" onclick="form1.answer.value +='8'">
+            <input type="button" value="9" onclick="form1.answer.value +='9'">
+            <input type="button" value="*" onclick="form1.answer.value +='*'">
+            <br><br>
+
+
+            <input type="button" value="/" onclick="form1.answer.value +='/'">
+            <input type="button" value="0" onclick="form1.answer.value +='0'">
+            <input type="button" value="." onclick="form1.answer.value +='.'">
+
+
+            <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)">
+            <br><br>
+
+            
+
+            <input type="button" value="Clear All" onclick="form1.answer.value =' '" id="clear">
+
+        </form>
+    </div>
+    
+</body>
+</html>
